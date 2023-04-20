@@ -88,3 +88,4 @@ void GildedRose::updateQuality()
 Item* GildedRose::createItem(string name, int sellIn, int quality) const {
   return new Item(name, sellIn, quality);
 }
+ //main
