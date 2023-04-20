@@ -4,15 +4,13 @@
 
 using namespace std;
 
-ostream& operator<<(ostream& s, Item& item)
-{
+ostream &operator<<(ostream &s, Item &item) {
   s << item.name << ", " << item.sellIn << ", " << item.quality;
   return s;
 }
 
-int main()
-{
-  vector<Item*> items;
+int main() {
+  vector<Item *> items;
   GildedRose G(items);
 
   items.push_back(G.createItem("+5 Dexterity Vest", 10, 20));
@@ -28,12 +26,10 @@ int main()
 
   cout << "OMGHAI!" << endl;
 
-  for (int day = 0; day <= 30; day++)
-  {
+  for (int day = 0; day <= 30; day++) {
     cout << "-------- day " << day << " --------" << endl;
     cout << "name, sellInDays, quality" << endl;
-    for (vector<Item*>::iterator i = items.begin(); i != items.end(); i++)
-    {
+    for (vector<Item *>::iterator i = items.begin(); i != items.end(); i++) {
       cout << *(*i) << endl;
     }
     cout << endl;

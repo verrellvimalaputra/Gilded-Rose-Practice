@@ -6,7 +6,7 @@
 #define TEST_CONJURED_ITEMS
 
 TEST(GildedRoseTest, Day01) {
-  vector<Item*> items;
+  vector<Item *> items;
   GildedRose G(items);
 
   items.push_back(G.createItem("+5 Dexterity Vest", 10, 20));
@@ -53,7 +53,7 @@ TEST(GildedRoseTest, Day01) {
 }
 
 TEST(GildedRoseTest, Day02) {
-  vector<Item*> items;
+  vector<Item *> items;
   GildedRose G(items);
 
   items.push_back(G.createItem("+5 Dexterity Vest", 10, 20));
@@ -102,9 +102,9 @@ TEST(GildedRoseTest, Day02) {
 }
 
 TEST(GildedRoseTest, Day05) {
-  const int NO_OF_DAYS =5;
+  const int NO_OF_DAYS = 5;
 
-  vector<Item*> items;
+  vector<Item *> items;
   GildedRose G(items);
 
   items.push_back(G.createItem("+5 Dexterity Vest", 10, 20));
@@ -116,7 +116,7 @@ TEST(GildedRoseTest, Day05) {
   items.push_back(G.createItem("Backstage passes to a TAFKAL80ETC concert", 10, 49));
   items.push_back(G.createItem("Backstage passes to a TAFKAL80ETC concert", 5, 49));
 
-  for (int i=1; i<=NO_OF_DAYS;i++) {
+  for (int i = 1; i <= NO_OF_DAYS; i++) {
     G.updateQuality();
   }
 
@@ -154,9 +154,9 @@ TEST(GildedRoseTest, Day05) {
 }
 
 TEST(GildedRoseTest, Day20) {
-  const int NO_OF_DAYS =20;
+  const int NO_OF_DAYS = 20;
 
-  vector<Item*> items;
+  vector<Item *> items;
   GildedRose G(items);
 
   items.push_back(G.createItem("+5 Dexterity Vest", 10, 20));
@@ -168,7 +168,7 @@ TEST(GildedRoseTest, Day20) {
   items.push_back(G.createItem("Backstage passes to a TAFKAL80ETC concert", 10, 49));
   items.push_back(G.createItem("Backstage passes to a TAFKAL80ETC concert", 5, 49));
 
-  for (int i=1; i<=NO_OF_DAYS;i++) {
+  for (int i = 1; i <= NO_OF_DAYS; i++) {
     G.updateQuality();
   }
 
@@ -206,9 +206,9 @@ TEST(GildedRoseTest, Day20) {
 }
 
 TEST(GildedRoseTest, Day30) {
-  const int NO_OF_DAYS =30;
+  const int NO_OF_DAYS = 30;
 
-  vector<Item*> items;
+  vector<Item *> items;
   GildedRose G(items);
 
   items.push_back(G.createItem("+5 Dexterity Vest", 10, 20));
@@ -220,7 +220,7 @@ TEST(GildedRoseTest, Day30) {
   items.push_back(G.createItem("Backstage passes to a TAFKAL80ETC concert", 10, 49));
   items.push_back(G.createItem("Backstage passes to a TAFKAL80ETC concert", 5, 49));
 
-  for (int i=1; i<=NO_OF_DAYS;i++) {
+  for (int i = 1; i <= NO_OF_DAYS; i++) {
     G.updateQuality();
   }
 
@@ -262,7 +262,7 @@ TEST(GildedRoseTest, Day30) {
 TEST(NewConjuredItemsTest, Day01) {
   const int NO_OF_DAYS = 1;
 
-  vector<Item*> items;
+  vector<Item *> items;
   GildedRose G(items);
 
   items.push_back(G.createItem("Conjured Mana Cake", 3, 6));
@@ -279,7 +279,7 @@ TEST(NewConjuredItemsTest, Day01) {
 TEST(NewConjuredItemsTest, Day02) {
   const int NO_OF_DAYS = 2;
 
-  vector<Item*> items;
+  vector<Item *> items;
   GildedRose G(items);
 
   items.push_back(G.createItem("Conjured Mana Cake", 3, 6));
@@ -295,7 +295,7 @@ TEST(NewConjuredItemsTest, Day02) {
 TEST(NewConjuredItemsTest, Day05) {
   const int NO_OF_DAYS = 5;
 
-  vector<Item*> items;
+  vector<Item *> items;
   GildedRose G(items);
 
   items.push_back(G.createItem("Conjured Mana Cake", 3, 6));
@@ -311,7 +311,7 @@ TEST(NewConjuredItemsTest, Day05) {
 TEST(NewConjuredItemsTest, Day20) {
   const int NO_OF_DAYS = 20;
 
-  vector<Item*> items;
+  vector<Item *> items;
   GildedRose G(items);
 
   items.push_back(G.createItem("Conjured Mana Cake", 3, 6));
@@ -327,7 +327,7 @@ TEST(NewConjuredItemsTest, Day20) {
 TEST(NewConjuredItemsTest, Day30) {
   const int NO_OF_DAYS = 30;
 
-  vector<Item*> items;
+  vector<Item *> items;
   GildedRose G(items);
 
   items.push_back(G.createItem("Conjured Mana Cake", 3, 6));

@@ -9,7 +9,6 @@
 #include "Item.h"
 #include "ItemTypes.h"
 
-
 ItemType Item::typeOf() const {
   if (name == "Backstage passes to a TAFKAL80ETC concert") {
     return EXPIRING;
