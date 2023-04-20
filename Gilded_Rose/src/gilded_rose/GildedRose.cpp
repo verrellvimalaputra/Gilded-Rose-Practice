@@ -8,7 +8,7 @@ GildedRose::~GildedRose() {
     delete item;
   }
 }
-    
+    //Test Git
 void GildedRose::updateQuality()
 {
     for (int i = 0; i < items.size(); i++)
