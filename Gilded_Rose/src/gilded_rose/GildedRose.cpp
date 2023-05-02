@@ -48,22 +48,20 @@ void updateConjured(Item &item){            //"Conjured" items degrade in Qualit
 void GildedRose::updateQuality() {
 
   for (auto &item : items) {
-    switch (item->typeOf()) {
-    case LEGENDARY:
-      updateSulfuras(*item);    //Sulfuras, Hand of Ragnaros is an LEGENDARY item
-      break;
-    case CONJURED:
-      updateConjured(*item);    //Conjured Mana Cake is a CONJURED item
-      break;
-    case MATURING:
-      updateAgedBrie(*item);    //AgedBrie is an MATURING item
-      break;
-    case EXPIRING:
-      updateBackstagePasses(*item);   //Backstage passes to a TAFKAL80ETC concert is an EXPIRING Item
-      break;
-    case NORMAL:
+    if (item->typeOf() == LEGENDARY) {
+      updateSulfuras(*item);  //Sulfuras, Hand of Ragnaros is an LEGENDARY item
+    }
+    if(item->typeOf() == CONJURED) {
+      updateConjured(*item); // Conjured Mana Cake is a CONJURED item
+    }
+    if(item->typeOf() == MATURING) {
+      updateAgedBrie(*item); // AgedBrie is an MATURING item
+    }
+    if(item->typeOf() == EXPIRING) {
+      updateBackstagePasses(*item); // Backstage passes to a TAFKAL80ETC concert is an EXPIRING Item
+    }
+    if(item->typeOf() == NORMAL) {
       updateStandardItem(*item); //The others are normal item
-      break;
     }
   }
 }
