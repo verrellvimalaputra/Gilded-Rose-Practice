@@ -18,7 +18,7 @@ TEST(GildedRoseTest, Day01) {
   items.push_back(G.createItem("Backstage passes to a TAFKAL80ETC concert", 10, 49));
   items.push_back(G.createItem("Backstage passes to a TAFKAL80ETC concert", 5, 49));
 
-  G.updateQuality();
+  G.updateItemsQuality();
   EXPECT_EQ("+5 Dexterity Vest", G.items[0]->name);
   EXPECT_EQ(9, G.items[0]->sellIn);
   EXPECT_EQ(19, G.items[0]->quality);
@@ -65,8 +65,8 @@ TEST(GildedRoseTest, Day02) {
   items.push_back(G.createItem("Backstage passes to a TAFKAL80ETC concert", 10, 49));
   items.push_back(G.createItem("Backstage passes to a TAFKAL80ETC concert", 5, 49));
 
-  G.updateQuality();
-  G.updateQuality();
+  G.updateItemsQuality();
+  G.updateItemsQuality();
 
   EXPECT_EQ("+5 Dexterity Vest", G.items[0]->name);
   EXPECT_EQ(8, G.items[0]->sellIn);
@@ -117,7 +117,7 @@ TEST(GildedRoseTest, Day05) {
   items.push_back(G.createItem("Backstage passes to a TAFKAL80ETC concert", 5, 49));
 
   for (int i = 1; i <= NO_OF_DAYS; i++) {
-    G.updateQuality();
+    G.updateItemsQuality();
   }
 
   EXPECT_EQ("+5 Dexterity Vest", G.items[0]->name);
@@ -169,7 +169,7 @@ TEST(GildedRoseTest, Day20) {
   items.push_back(G.createItem("Backstage passes to a TAFKAL80ETC concert", 5, 49));
 
   for (int i = 1; i <= NO_OF_DAYS; i++) {
-    G.updateQuality();
+    G.updateItemsQuality();
   }
 
   EXPECT_EQ("+5 Dexterity Vest", G.items[0]->name);
@@ -221,7 +221,7 @@ TEST(GildedRoseTest, Day30) {
   items.push_back(G.createItem("Backstage passes to a TAFKAL80ETC concert", 5, 49));
 
   for (int i = 1; i <= NO_OF_DAYS; i++) {
-    G.updateQuality();
+    G.updateItemsQuality();
   }
 
   EXPECT_EQ("+5 Dexterity Vest", G.items[0]->name);
@@ -268,7 +268,7 @@ TEST(NewConjuredItemsTest, Day01) {
   items.push_back(G.createItem("Conjured Mana Cake", 3, 6));
 
   for (int i = 1; i <= NO_OF_DAYS; i++) {
-    G.updateQuality();
+    G.updateItemsQuality();
   }
   cout << "\"Conjured\" items degrade in Quality twice as fast as normal items";
 
@@ -285,7 +285,7 @@ TEST(NewConjuredItemsTest, Day02) {
   items.push_back(G.createItem("Conjured Mana Cake", 3, 6));
 
   for (int i = 1; i <= NO_OF_DAYS; i++) {
-    G.updateQuality();
+    G.updateItemsQuality();
   }
 
   EXPECT_EQ("Conjured Mana Cake", G.items[0]->name);
@@ -301,7 +301,7 @@ TEST(NewConjuredItemsTest, Day05) {
   items.push_back(G.createItem("Conjured Mana Cake", 3, 6));
 
   for (int i = 1; i <= NO_OF_DAYS; i++) {
-    G.updateQuality();
+    G.updateItemsQuality();
   }
 
   EXPECT_EQ("Conjured Mana Cake", G.items[0]->name);
@@ -317,7 +317,7 @@ TEST(NewConjuredItemsTest, Day20) {
   items.push_back(G.createItem("Conjured Mana Cake", 3, 6));
 
   for (int i = 1; i <= NO_OF_DAYS; i++) {
-    G.updateQuality();
+    G.updateItemsQuality();
   }
 
   EXPECT_EQ("Conjured Mana Cake", G.items[0]->name);
@@ -333,7 +333,7 @@ TEST(NewConjuredItemsTest, Day30) {
   items.push_back(G.createItem("Conjured Mana Cake", 3, 6));
 
   for (int i = 1; i <= NO_OF_DAYS; i++) {
-    G.updateQuality();
+    G.updateItemsQuality();
   }
 
   EXPECT_EQ("Conjured Mana Cake", G.items[0]->name);

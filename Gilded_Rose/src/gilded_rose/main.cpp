@@ -33,6 +33,6 @@ int main() {
     }
     cout << endl;
 
-    G.updateQuality();
+    G.updateItemsQuality();
   }
 }
