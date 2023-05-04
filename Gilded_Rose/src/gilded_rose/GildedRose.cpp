@@ -58,6 +58,7 @@ void updateConjured(Item &item){            //"Conjured" items degrade in Qualit
   item.quality = std::max(MIN_QUALITY_VALUE, item.quality - (item.sellIn < MIN_SELLIN_LIMIT ? 4 : 2));
 }
 
+//Result Preparation for Lab 2
 void updateQuality(Item &item) {
     if (item.typeOf() == LEGENDARY) {
       updateSulfuras(item);  //Sulfuras, Hand of Ragnaros is an LEGENDARY item
