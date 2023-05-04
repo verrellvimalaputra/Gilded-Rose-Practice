@@ -9,5 +9,5 @@ Normal::Normal(string name, int sellIn, int quality) : Item(name, sellIn, qualit
 void Normal::updateQuality()
 {
     decreaseSellIn();
-    item.quality = std::max(MIN_QUALITY_VALUE, item.quality - (item.sellIn < MIN_SELLIN_LIMIT ? 2 : 1))
+    quality = std::max(MIN_QUALITY_VALUE, quality - (sellIn < MIN_SELLIN_LIMIT ? 2 : 1));
 }

@@ -8,7 +8,7 @@
 
 #include "Item.h"
 
-Item::Item(string name, int sellIn, int quality) {name(name), sellIn(sellIn), quality(quality)}
+Item::Item(string name, int sellIn, int quality) : name(name), sellIn(sellIn), quality(quality) {}
 
 int Item::decreaseSellIn() {
   return sellIn--;

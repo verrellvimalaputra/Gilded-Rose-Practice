@@ -10,5 +10,5 @@ Maturing::Maturing(std::string name, int sellIn, int quality) : Item(name, sellI
 void Maturing::updateQuality()
 {
     decreaseSellIn();
-    item.quality = std::min(MAX_QUALITY_VALUE, item.quality + (item.sellIn < MIN_SELLIN_LIMIT ? 2 : 1));
+    quality = std::min(MAX_QUALITY_VALUE, quality + (sellIn < MIN_SELLIN_LIMIT ? 2 : 1));
 }

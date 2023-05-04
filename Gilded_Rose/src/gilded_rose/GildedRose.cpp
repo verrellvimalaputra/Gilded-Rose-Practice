@@ -9,11 +9,27 @@ GildedRose::~GildedRose() {
   }
 }
 
-  void GildedRose::updateItemsQuality() {
+void GildedRose::updateItemsQuality() {
     for (auto itemPtr : items) {
-      updateQuality(*itemPtr);
+      itemPtr->updateQuality();
     }
   }
 
 
-Item *GildedRose::createItem(string name, int sellIn, int quality) const { return new Item(name, sellIn, quality); }
+Item *GildedRose::createItem(string name, int sellIn, int quality) const {
+  if (name == "Backstage passes to a TAFKAL80ETC concert") {
+    return new Expiring(name, sellIn, quality);
+  }
+  if (name == "Sulfuras, Hand of Ragnaros"){
+    return new Legendary(name,sellIn,quality);
+  }
+  if (name == "Conjured Mana cake"){
+    return new Conjured(name,sellIn,quality);
+  }
+  if (name == "AgedBrie"){
+    return new Maturing(name,sellIn,quality);
+  }
+  else{
+    return new Normal(name, sellIn, quality);
+  }
+}

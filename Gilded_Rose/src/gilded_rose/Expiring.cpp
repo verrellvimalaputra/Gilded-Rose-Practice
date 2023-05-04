@@ -10,13 +10,13 @@ void Expiring::updateQuality() {
     decreaseSellIn();
     const int FIVE_DAYS_OR_LESS = 5;
     const int TEN_DAYS_OR_LESS = 10;
-    if(item.sellIn < 0){
-        item.quality = 0;
-    }else if (item.sellIn < FIVE_DAYS_OR_LESS){
-        item.quality = std::min (MAX_QUALITY_VALUE, increaseQuality(item, 3));
-    }else if(item.sellIn < TEN_DAYS_OR_LESS){
-        item.quality = std::min(MAX_QUALITY_VALUE, increaseQuality(item, 2));
+    if(sellIn < 0){
+        quality = 0;
+    }else if (sellIn < FIVE_DAYS_OR_LESS){
+        quality = std::min (MAX_QUALITY_VALUE, increaseQuality(3));
+    }else if(sellIn < TEN_DAYS_OR_LESS){
+        quality = std::min(MAX_QUALITY_VALUE, increaseQuality(2));
     }else{
-        item.quality = std::min(MAX_QUALITY_VALUE, increaseQuality(item, 1));
+        quality = std::min(MAX_QUALITY_VALUE, increaseQuality(1));
     }
 }

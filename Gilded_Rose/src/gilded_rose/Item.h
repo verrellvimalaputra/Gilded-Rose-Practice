@@ -17,20 +17,17 @@ enum ItemType { LEGENDARY, CONJURED, MATURING, EXPIRING, NORMAL };
 
 class Item {
 public :
+  Item(string name, int sellIn, int quality);
   virtual void updateQuality() = 0;
   int decreaseSellIn();
   int increaseQuality(int increment);
   const int MAX_QUALITY_VALUE = 50;
   const int MIN_QUALITY_VALUE = 0;
   const int MIN_SELLIN_LIMIT = 0;
-protected:
   string name;
   int sellIn;
   int quality;
-  Item(string name, int sellIn, int quality)
-      : name(name)
-      , sellIn(sellIn)
-      , quality(quality){};
+protected:
 
 };
 
