@@ -7,20 +7,13 @@
 // So do not touch this!
 
 #include "Item.h"
-#include "ItemTypes.h"
 
-ItemType Item::typeOf() const {
-  if (name == "Backstage passes to a TAFKAL80ETC concert") {
-    return EXPIRING;
-  }
-  if (name == "Sulfuras, Hand of Ragnaros") {
-    return LEGENDARY;
-  }
-  if (name == "Aged Brie") {
-    return MATURING;
-  }
-  if (name == "Conjured Mana Cake") {
-    return CONJURED;
-  }
-  return NORMAL;
+Item::Item(string name, int sellIn, int quality) {name(name), sellIn(sellIn), quality(quality)}
+
+int Item::decreaseSellIn() {
+  return sellIn--;
+}
+
+int Item::increaseQuality(int increment) {
+  return quality + increment;
 }

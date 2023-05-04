@@ -16,7 +16,14 @@ using namespace std;
 enum ItemType { LEGENDARY, CONJURED, MATURING, EXPIRING, NORMAL };
 
 class Item {
-public:
+public :
+  virtual void updateQuality() = 0;
+  int decreaseSellIn();
+  int increaseQuality(int increment);
+  const int MAX_QUALITY_VALUE = 50;
+  const int MIN_QUALITY_VALUE = 0;
+  const int MIN_SELLIN_LIMIT = 0;
+protected:
   string name;
   int sellIn;
   int quality;
@@ -24,7 +31,7 @@ public:
       : name(name)
       , sellIn(sellIn)
       , quality(quality){};
-  ItemType typeOf() const;
+
 };
 
 #endif // ITEM_H
