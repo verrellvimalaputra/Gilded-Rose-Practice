@@ -8,5 +8,5 @@ Conjured::Conjured(string name, int sellIn, int Quality) : Item(name, sellIn, Qu
 
 void Conjured::updateQuality() {
   decreaseSellIn();
-  quality = std::max(MIN_QUALITY_VALUE, quality - (sellIn < MIN_SELLIN_LIMIT ? 4 : 2));
+  quality = std::max(MIN_QUALITY_VALUE, quality - (sellIn < MIN_SELLIN_LIMIT ? 4: 2));
 }

@@ -23,10 +23,10 @@ Item *GildedRose::createItem(string name, int sellIn, int quality) const {
   if (name == "Sulfuras, Hand of Ragnaros"){
     return new Legendary(name,sellIn,quality);
   }
-  if (name == "Conjured Mana cake"){
+  if (name == "Conjured Mana Cake"){
     return new Conjured(name,sellIn,quality);
   }
-  if (name == "AgedBrie"){
+  if (name == "Aged Brie"){
     return new Maturing(name,sellIn,quality);
   }
   else{

@@ -11,9 +11,10 @@
 Item::Item(string name, int sellIn, int quality) : name(name), sellIn(sellIn), quality(quality) {}
 
 int Item::decreaseSellIn() {
-  return sellIn--;
+  return --sellIn;
 }
 
 int Item::increaseQuality(int increment) {
-  return quality + increment;
+  quality += increment;
+  return quality;
 }
