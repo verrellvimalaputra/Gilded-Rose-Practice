@@ -4,7 +4,7 @@
 
 #ifndef OOAD_23SS_DO3Y_2_CHIU_VIMALAPUTRA_NORMAL_H
 #define OOAD_23SS_DO3Y_2_CHIU_VIMALAPUTRA_NORMAL_H
-#include "item.h"
+#include "Item.h"
 
 class Normal : public Item{
 public:
