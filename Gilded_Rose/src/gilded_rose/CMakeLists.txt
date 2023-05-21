@@ -4,8 +4,6 @@ add_library(gilded_rose STATIC
         "GildedRose.h"
         "Item.cpp"
         "Item.h"
-        "ItemTypes.cpp"
-        "ItemTypes.h"
         "Normal.cpp"
         "Normal.h"
         "Maturing.cpp"
