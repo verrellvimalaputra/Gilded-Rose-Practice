@@ -7,7 +7,7 @@ void Subject::attach(Observer *observer) {
 void Subject::detach(Observer *observer) {
     observers.remove(observer);
 }
-
+//d
 void Subject::notify() {
     auto iterator = observers.begin();
     while (iterator != observers.end()) {
