@@ -13,7 +13,7 @@ Item::Item(string name, int sellIn, int quality) : name(name), sellIn(sellIn), q
 int Item::decreaseSellIn() {
   return --sellIn;
 }
-
+//addieren Qualität
 int Item::increaseQuality(int increment) {
   quality += increment;
   return quality;
