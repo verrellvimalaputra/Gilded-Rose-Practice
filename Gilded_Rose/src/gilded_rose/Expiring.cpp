@@ -10,6 +10,7 @@ void Expiring::updateQuality() {
     decreaseSellIn();
     const int FIVE_DAYS_OR_LESS = 5;
     const int TEN_DAYS_OR_LESS = 10;
+
     if(sellIn < 0){
         quality = 0;
     }else if (sellIn < FIVE_DAYS_OR_LESS){
