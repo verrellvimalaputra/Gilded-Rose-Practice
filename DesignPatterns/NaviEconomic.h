@@ -2,9 +2,9 @@
 #define NAVIECONOMIC_H
 
 
-#include "Navigation.h"
+#include "NaviStrategy.h"
 
-class NaviEconomic: public Navigation {
+class NaviEconomic: public NaviStrategy {
 private:
     void calculateRoute() override;
 };

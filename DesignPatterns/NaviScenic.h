@@ -1,9 +1,9 @@
 #ifndef NAVISCENIC_H
 #define NAVISCENIC_H
 
-#include "Navigation.h"
+#include "NaviStrategy.h"
 
-class NaviScenic: public Navigation {
+class NaviScenic: public NaviStrategy {
 private:
     void calculateRoute() override;
 };

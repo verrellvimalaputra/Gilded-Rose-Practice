@@ -1,12 +1,13 @@
 #include "Navigation.h"
 #include <iostream>
 
+Navigation::Navigation(NaviStrategy* strategy) : strategy(strategy) {}
 
-Navigation::Navigation(){
-}
 void Navigation::init() {
     std::cout << "Welcome to the Simulator of Navigation Devices!" << std::endl;
-
-    this->calculateRoute();
+    strategy->calculateRoute();
 }
 
+void Navigation::setStrategy(NaviStrategy* newStrategy) {
+    strategy = newStrategy;
+}
