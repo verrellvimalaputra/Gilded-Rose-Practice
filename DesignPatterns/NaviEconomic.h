@@ -5,7 +5,7 @@
 #include "NaviStrategy.h"
 
 class NaviEconomic: public NaviStrategy {
-private:
+public:
     void calculateRoute() override;
 };
 

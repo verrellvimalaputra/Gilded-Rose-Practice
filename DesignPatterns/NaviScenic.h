@@ -4,7 +4,7 @@
 #include "NaviStrategy.h"
 
 class NaviScenic: public NaviStrategy {
-private:
+public:
     void calculateRoute() override;
 };
 
