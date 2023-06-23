@@ -3,10 +3,9 @@
 
 
 #include "NaviStrategy.h"
-
-    class NaviFast: public NaviStrategy {
-    private:
-        void calculateRoute() override;
-    };
+class NaviFast: public NaviStrategy {
+public:
+    void calculateRoute() override;
+};
 
 #endif //NAVIFAST_H
