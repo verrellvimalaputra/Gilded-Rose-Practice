@@ -3,3 +3,7 @@
 //
 
 #include "NaviStrategy.h"
+
+NaviStrategy::NaviStrategy() {
+
+}

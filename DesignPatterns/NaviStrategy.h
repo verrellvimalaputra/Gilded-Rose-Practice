@@ -8,6 +8,7 @@
 
 class NaviStrategy {
 public:
+    NaviStrategy();
     virtual void calculateRoute() = 0;
 };
 
