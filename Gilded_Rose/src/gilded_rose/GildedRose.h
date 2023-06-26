@@ -4,6 +4,7 @@
 #include "Legendary.h"
 #include "Normal.h"
 #include "Maturing.h"
+#include "NormalItem.h"
 #include <string>
 #include <vector>
 

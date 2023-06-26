@@ -30,6 +30,6 @@ Item *GildedRose::createItem(string name, int sellIn, int quality) const {
     return new Maturing(name,sellIn,quality);
   }
   else{
-    return new Normal(name, sellIn, quality);
+    return new NormalItem(name, sellIn, quality);
   }
 }

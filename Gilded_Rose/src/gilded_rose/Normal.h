@@ -9,7 +9,6 @@
 class Normal : public Item{
 public:
     Normal(string name, int sellIn, int quality);
-    void updateQuality() override;
     ~Normal();
 };
 
