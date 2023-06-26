@@ -3,4 +3,4 @@ project(Strategy)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Inheritance main.cpp Navigation.cpp Navigation.h NaviEconomic.cpp NaviEconomic.h NaviFast.cpp NaviFast.h NaviScenic.cpp NaviScenic.h NaviStrategy.cpp NaviStrategy.h)
+add_executable(Inheritance main.cpp Navigation.cpp Navigation.h NaviEconomic.cpp NaviEconomic.h NaviFast.cpp NaviFast.h NaviScenic.cpp NaviScenic.h NaviStrategy.cpp NaviStrategy.h DisplayStrategy.cpp DisplayStrategy.h TwoDStrategy.cpp TwoDStrategy.h ThreeDStrategy.cpp ThreeDStrategy.h)
