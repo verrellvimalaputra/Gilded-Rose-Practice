@@ -8,8 +8,6 @@
 #include <vector>
 using namespace std;
 
-enum ItemType { LEGENDARY, CONJURED, MATURING, EXPIRING, NORMAL };
-
 class Item {
 public :
   Item(string name, int sellIn, int quality);

@@ -17,4 +17,7 @@ public:
   Item *createItem(string, int, int) const;
   void updateItemsQuality();
   virtual ~GildedRose();
+private:
+  ItemCreator* itemCreator;
+
 };

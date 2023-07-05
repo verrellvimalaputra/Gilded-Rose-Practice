@@ -7,8 +7,9 @@
 #include "ItemCreator.h"
 
 class ConcreteItemCreator: public ItemCreator {
-
-
+public:
+  Item * createItem(std::string name, int sellIn, int quality) override;
+private:
 };
 
 #endif // GILDEDROSE_CONCRETEITEMCREATOR_H

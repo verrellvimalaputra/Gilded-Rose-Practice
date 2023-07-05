@@ -1,7 +1,10 @@
 #include "GildedRose.h"
 
 GildedRose::GildedRose(vector<Item *> &items)
-    : items(items) {}
+    : items(items){
+  auto concreteItemCreator = new ConcreteItemCreator();
+  itemCreator = concreteItemCreator;
+}
 
 GildedRose::~GildedRose() {
   for (auto &item : items) {
