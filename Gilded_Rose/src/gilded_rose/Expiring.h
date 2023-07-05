@@ -5,6 +5,7 @@
 #ifndef OOAD_23SS_DO3Y_2_CHIU_VIMALAPUTRA_EXPIRING_H
 #define OOAD_23SS_DO3Y_2_CHIU_VIMALAPUTRA_EXPIRING_H
 #include "Item.h"
+#include "ConcreteItemCreator.h"
 
 class Expiring : public Item{
 public:

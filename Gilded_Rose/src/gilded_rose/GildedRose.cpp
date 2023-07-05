@@ -17,19 +17,5 @@ void GildedRose::updateItemsQuality() {
 
 
 Item *GildedRose::createItem(string name, int sellIn, int quality) const {
-  if (name == "Backstage passes to a TAFKAL80ETC concert") {
-    return new Expiring(name, sellIn, quality);
-  }
-  if (name == "Sulfuras, Hand of Ragnaros"){
-    return new Legendary(name,sellIn,quality);
-  }
-  if (name == "Conjured Mana Cake"){
-    return new Conjured(name,sellIn,quality);
-  }
-  if (name == "Aged Brie"){
-    return new Maturing(name,sellIn,quality);
-  }
-  else{
-    return new NormalItem(name, sellIn, quality);
-  }
+  return itemCreator->createItem(name, sellIn, quality);
 }

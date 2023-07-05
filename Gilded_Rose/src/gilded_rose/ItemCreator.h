@@ -6,13 +6,12 @@
 #define GILDEDROSE_ITEMCREATOR_H
 
 #include "iostream"
-#include "item.h"
+#include "Item.h"
 
 class ItemCreator {
 public:
-  static Item* createItem(string name, int sellIn, int quality);
-private:
-  static ItemType getItemType(string name);
+  virtual Item* createItem(string name, int sellIn, int quality) = 0;
+
 };
 
 #endif // GILDEDROSE_ITEMCREATOR_H

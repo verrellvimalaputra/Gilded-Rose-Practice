@@ -27,7 +27,3 @@ Item *ItemCreator::createItem(std::string name, int sellIn, int quality) {
   }
 }
 
-ItemType getItemType(string name)
-{
-  return NORMAL;
-}

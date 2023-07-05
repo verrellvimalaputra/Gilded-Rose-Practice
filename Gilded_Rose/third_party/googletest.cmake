@@ -24,7 +24,7 @@ endif()
 
 add_library(gtest STATIC
     "${gtest_SOURCE_DIR}/src/gtest-all.cc"
-        ../src/gilded_rose/ItemCreator.cpp ../src/gilded_rose/ItemCreator.h ../src/gilded_rose/NormalItem.cpp ../src/gilded_rose/NormalItem.h ../src/gilded_rose/ConcreteItemCreator.cpp ../src/gilded_rose/ConcreteItemCreator.h)
+        ../src/gilded_rose/ItemCreator.cpp ../src/gilded_rose/ItemCreator.h ../src/gilded_rose/ConcreteItemCreator.cpp ../src/gilded_rose/ConcreteItemCreator.h)
 target_include_directories(gtest
     PRIVATE "${gtest_SOURCE_DIR}"
     PUBLIC "${gtest_SOURCE_DIR}/include"
@@ -37,7 +37,7 @@ endif()
 
 add_library(gtest_main STATIC
     "${gtest_SOURCE_DIR}/src/gtest_main.cc"
-        ../src/gilded_rose/ItemCreator.cpp ../src/gilded_rose/ItemCreator.h ../src/gilded_rose/NormalItem.cpp ../src/gilded_rose/NormalItem.h ../src/gilded_rose/ConcreteItemCreator.cpp ../src/gilded_rose/ConcreteItemCreator.h)
+        ../src/gilded_rose/ItemCreator.cpp ../src/gilded_rose/ItemCreator.h ../src/gilded_rose/ConcreteItemCreator.cpp ../src/gilded_rose/ConcreteItemCreator.h)
 target_link_libraries(gtest_main
     PUBLIC gtest
 )
