@@ -4,8 +4,13 @@
 
 #include "Legendary.h"
 
-Legendary::Legendary(string name, int sellIn, int Quality) : Item(name, sellIn, Quality) {}
+Legendary::Legendary(std::string name, int sellIn, int Quality) : Item(name, sellIn, Quality) {}
 
 void Legendary::updateQuality(){
     //keine Veranderung
 };
+
+Legendary::~Legendary() {
+
+}
+

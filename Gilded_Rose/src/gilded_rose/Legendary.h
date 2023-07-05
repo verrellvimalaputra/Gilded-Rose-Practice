@@ -10,6 +10,7 @@ class Legendary : public Item {
 public:
   Legendary(string name, int sellIn, int Quality);
   void updateQuality() override;
+  ~Legendary();
 
 };
 

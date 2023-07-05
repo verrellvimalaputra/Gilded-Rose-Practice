@@ -10,3 +10,7 @@ void Conjured::updateQuality() {
   decreaseSellIn();
   quality = std::max(MIN_QUALITY_VALUE, quality - (sellIn < MIN_SELLIN_LIMIT ? 4: 2));
 }
+
+Conjured::~Conjured() noexcept {
+
+}

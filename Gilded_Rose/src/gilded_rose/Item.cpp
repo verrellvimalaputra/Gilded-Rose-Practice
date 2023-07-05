@@ -14,3 +14,8 @@ int Item::increaseQuality(int increment) {
   quality += increment;
   return quality;
 }
+
+Item::~Item()
+{
+  
+}

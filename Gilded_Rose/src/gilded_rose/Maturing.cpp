@@ -12,3 +12,7 @@ void Maturing::updateQuality()
     decreaseSellIn();
     quality = std::min(MAX_QUALITY_VALUE, quality + (sellIn < MIN_SELLIN_LIMIT ? 2 : 1));
 }
+
+Maturing::~Maturing() noexcept {
+
+}

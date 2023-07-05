@@ -10,6 +10,7 @@ class Conjured : public Item{
 public:
   Conjured(string name, int sellIn, int Quality);
   void updateQuality() override;
+  ~Conjured();
 
 };
 

@@ -11,6 +11,7 @@ using namespace std;
 class Item {
 public :
   Item(string name, int sellIn, int quality);
+  virtual ~Item();
   virtual void updateQuality() = 0;     //virtual Method
   int decreaseSellIn();
   int increaseQuality(int increment);

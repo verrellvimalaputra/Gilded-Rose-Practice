@@ -17,7 +17,11 @@ void Expiring::updateQuality() {
         quality = std::min (MAX_QUALITY_VALUE, increaseQuality(3));
     }else if(sellIn < TEN_DAYS_OR_LESS){
         quality = std::min(MAX_QUALITY_VALUE, increaseQuality(2));
-    }else{
+    }else {
         quality = std::min(MAX_QUALITY_VALUE, increaseQuality(1));
     }
+}
+
+Expiring::~Expiring() noexcept {
+
 }

@@ -11,3 +11,8 @@ void Normal::updateQuality() {
   quality = std::max(MIN_QUALITY_VALUE, quality - (sellIn < MIN_SELLIN_LIMIT ? 2 : 1));
 }
 
+Normal::~Normal()
+{
+
+}
+
