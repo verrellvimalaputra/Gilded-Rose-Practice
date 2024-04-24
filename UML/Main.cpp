@@ -7,6 +7,8 @@ int main() {
 
     Observer *batteryApp = new BatteryApp(*systemBattery, "Battery App");
     Observer *batteryLogger = new BatteryLogger(*systemBattery, "Battery Logger");
+    //systemBattery->attach(batteryApp);
+    //systemBattery->attach(batteryLogger);
 
     systemBattery->setBatteryLevel(87);
 

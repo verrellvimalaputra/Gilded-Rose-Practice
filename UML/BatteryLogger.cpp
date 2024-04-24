@@ -2,6 +2,7 @@
 
 BatteryLogger::BatteryLogger(SystemBattery& subject, std::string name)
         : Observer(), subject(subject), name(std::move(name)) {
+    this->subject.attach(this);
 
 }
 
